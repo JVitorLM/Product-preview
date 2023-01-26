@@ -1,0 +1,133 @@
+:root {
+    --Cream: #f2ebe3;
+    --Dark-cyan: #3c8067;
+    --Dark-grayish-blue: #6c7289;
+    --Very-dark-blue: #1c232b;
+    --White: #ffffff;
+
+    --fonte-principal: "Montserrat";
+    --fonte-secundaria: "Fraunces";
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+
+/* Mobile: 375px */
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5em 1em 0.5em 1em;
+}
+
+.card {
+    margin: 1em;
+}
+
+.container__imagem-mobile {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.card__tipo {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.card__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.card__descricao {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card__preco {
+    color: var(--Dark-cyan);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.card__preco-antigo {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 1em;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+.card__butao {
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    margin: 0 0 1em 1em;
+    text-align: center;
+    padding: 1em 7em;
+}
+
+.container__imagem-desktop {
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        margin: 4.5em 37vh;
+        width: 100vh;
+        font-size: 20px;
+    }
+
+    .container__imagem-mobile{
+        display: none;
+    }
+
+    .container__imagem-desktop {
+        display: flex;
+        width: 50%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card__butao {
+        padding: 1.5em 8em;
+        background-color: var(--Dark-cyan);
+    }
+
+    .card__butao:hover {
+        background-color: #2e614e;
+    }
+    
+    .card {
+        margin: 2em;
+    }
+
+    .attribution {
+        margin-left: 5em;
+    }
+}
